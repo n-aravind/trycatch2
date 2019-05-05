@@ -6,8 +6,10 @@ public class Main {
             for (String number : numbers){
                 Integer.parseInt(number);
             }
-        }catch (NumberFormatException e){
+        }/*catch (NumberFormatException e){
             System.out.println(e.getClass() + " " + e.getMessage());
+        }*/finally {
+            System.out.println("Inside finally");
         }
     }
 }
